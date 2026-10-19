@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inova Vitro | Expertos en Vidrio y Aluminio</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container flex-nav">
+            <a href="#" class="logo">INOVA <span>VITRO</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#cotizacion">Cotización</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Especialistas en Vidrio y Aluminio</h1>
+            <p>13 años de experiencia nos respaldan garantizando obras de máxima calidad, diseño e innovación.</p>
+            <a href="#cotizacion" class="btn-primary">Solicitar Cotización</a>
+        </div>
+    </section>
+
+    <!-- Sobre la Empresa -->
+    <section id="nosotros" class="about section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Sobre Inova Vitro</h2>
+                    <div class="divider"></div>
+                    <p>En Inova Vitro, transformamos tus espacios con soluciones arquitectónicas de primer nivel.
+                        Ofrecemos todo tipo de vidrio y aluminio, siempre dando lo mejor en cada proyecto.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Más de una década de experiencia comprobable.</li>
+                        <li><i class="fas fa-check-circle"></i> Materiales de la más alta resistencia y estética.</li>
+                        <li><i class="fas fa-check-circle"></i> Atención personalizada para proyectos residenciales y
+                            comerciales.</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Estructura moderna de vidrio y acero">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services section-padding bg-light">
+        <div class="container text-center">
+            <h2>Nuestros Servicios</h2>
+            <div class="divider center"></div>
+            <p class="subtitle">Soluciones integrales a la medida de tus necesidades</p>
+
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Puertas de aluminio">
+                    <div class="card-content">
+                        <i class="fas fa-door-open service-icon"></i>
+                        <h3>Puertas y Ventanas</h3>
+                        <p>Diseño, fabricación e instalación de cancelería de aluminio de alta gama.</p>
+                    </div>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1541888078652-320fb55e2a22?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Cristal Templado">
+                    <div class="card-content">
+                        <i class="fas fa-border-all service-icon"></i>
+                        <h3>Cristal Templado</h3>
+                        <p>Especialistas en fachadas, barandales y divisiones de cristal templado seguro y elegante.</p>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Estructuras de acero">
+                    <div class="card-content">
+                        <i class="fas fa-hammer service-icon"></i>
+                        <h3>Obras y Estructuras</h3>
+                        <p>Desarrollo de proyectos estructurales combinando la resistencia del acero y la ligereza del
+                            vidrio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cotización -->
+    <section id="cotizacion" class="quote section-padding">
+        <div class="container">
+            <div class="quote-box">
+                <h2>Inicia tu Proyecto Hoy</h2>
+                <p>Déjanos tus datos y un experto se pondrá en contacto contigo a la brevedad.</p>
+                <form id="quote-form">
+                    <div class="form-group">
+                        <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                        <input type="email" id="email" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefono" placeholder="Teléfono" required>
+                        <select id="servicio" required>
+                            <option value="" disabled selected>Selecciona un servicio</option>
+                            <option value="puertas">Puertas y Ventanas</option>
+                            <option value="templado">Cristal Templado</option>
+                            <option value="obras">Obras Integrales</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <textarea id="mensaje" rows="4" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto y Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>Inova Vitro</h3>
+                <p>13 años de experiencia trabajando con todo tipo de vidrio y aluminio. Siempre dando lo mejor.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 19 oriente #606, San Pedro Cholula, Mexico 72760</p>
+                <p><i class="fas fa-envelope"></i> contacto@inovavitro.com</p>
+                <p><i class="fas fa-phone-alt"></i> +52 (000) 000-0000</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/inovavitro" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <p class="social-tag">@inovavitro</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Inova Vitro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
